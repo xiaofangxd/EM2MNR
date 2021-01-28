@@ -1,8 +1,12 @@
 % This code mainly implements EM2MNR in "Evolutionary multitasking multilayer network reconstruction".
-% If you have any questions, please contact my email: Xiao Feng(Email: xiaofengxd@126.com£©
+% If you have any questions, please contact my email: Xiao Feng(Email: xiaofengxd@126.comÂ£Â©
 
 clc,clear all
-addpath(genpath('EM2MNR'))
+addpath(genpath('public'))
+addpath(genpath('problems'))
+addpath(genpath('operators'))
+addpath(genpath('Data'))
+addpath(genpath('algorithm'))
 %% parameter settings
 N = 100;                                   % Population size
 proC = 1;                                  % SBX probability
@@ -11,10 +15,10 @@ proM = 1;                                  % PM probability
 disM = 5;                                  % PM parameter
 gen = 1000;                                % Max generation
 Gtf = 10;                                  % transfer every few generations
-selection_process = 'elitist';             % Option£ºelitist¡¢roulette wheel¡¢Tournament
-name = 1;                                  % Test suite£º1~24
+selection_process = 'elitist';             % OptionÂ£ÂºelitistÂ¡Â¢roulette wheelÂ¡Â¢Tournament
+name = 1;                                  % Test suiteÂ£Âº1~24
 NL = 10;                                   % Number of transfer solutions
-Nm = 1;                                    %Number of samples, Option:0.4£º0.1£º1
+Nm = 1;                                    %Number of samples, Option:0.4Â£Âº0.1Â£Âº1
 times = 1;                                 % Number of runs
 
 %% Initialization task
