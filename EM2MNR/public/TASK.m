@@ -17,7 +17,6 @@ classdef TASK
             nname1 = ['WS';'NW';'BA';'ER'];
             nname2 = ['L-L';'R-L';'L-R'];
             NN = [20,40];
-%             NN = [10,40];
             switch name
                 case 1
                     name1 = nname1(1,:);name2 = nname2(1,:);N = NN(1);
